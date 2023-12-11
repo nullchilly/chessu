@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: chessu_db
+    environment:
+      POSTGRES_HOST: localhost
+      POSTGRES_USER: chessu
+      POSTGRES_PASSWORD: chessu
+      POSTGRES_DB: chessu
+    ports:
+      - "4200:5432"
